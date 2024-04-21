@@ -2,6 +2,10 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+a:visited { 
+    text-decoration: none; 
+    color: blue; 
+   }
 
 .header{
     border-bottom: 2px solid black;
@@ -26,6 +30,8 @@ body{
     padding: 1rem 0.5rem;
     width: fit-content;
     margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .vline{
@@ -65,11 +71,17 @@ body{
     margin-bottom: 2rem ;
     }
 
+    #updatesID {
+        display: block;
+        height: 200px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
 .title{
     font-size: 30px;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid black;
-    
 }
 
 .title:hover{
@@ -95,9 +107,9 @@ body{
 }
 
 .research__work{
-    background-color: yellowgreen;
+    
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 1rem;
 }
 
@@ -108,13 +120,23 @@ body{
     margin-bottom: 1rem;
 }
 
+#workexID {
+    display: block;
+    height: 200px;
+    overflow: scroll;
+}
+
 .gif{
     padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    
 }
 
 .research__text{
     padding: 1rem;
-    width: fit-content;
+    width: 70%;
     height: fit-content;
     margin: auto auto;
 }
@@ -125,12 +147,22 @@ body{
     margin-bottom: 2rem;
 }
 
+.research__img{
+    width: 90%;
+    transition: transform .5s ease;
+    margin: auto;
+}
+
+.research__img:hover{
+    transform: scale(1.1);
+}
 
 .logos{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    width: 90%;
+    width: 70%;
     margin: auto;
     
 }
@@ -170,7 +202,25 @@ body{
         width: 1000px;
         margin: auto;
         margin-bottom: 2rem;
+        
     }
+
+    #updatesID {
+        display: block;
+        height: 200px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    #workexID {
+        display: block;
+        height: 200px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+   
+
+    
 
     .research{
         width: 1000px;
@@ -196,5 +246,6 @@ body{
 
     .logos{
         flex-wrap: wrap;
+        
     }
 }
